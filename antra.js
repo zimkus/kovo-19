@@ -1,5 +1,5 @@
 const fs = require("fs");
-const data = fs.readFileSync('temperaturos.txt').toString().split(" ");
+const data = fs.readFileSync(process.argv[2]).toString().split(" ");
 
 let min = data[0];
 let max = data[0];
